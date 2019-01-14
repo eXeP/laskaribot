@@ -1,3 +1,5 @@
+#!/usr/local/bin/python
+# -*- coding: utf-8 -*-
 from datetime import time, tzinfo
 import logging
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
