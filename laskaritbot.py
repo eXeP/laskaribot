@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 
 
 def start(bot, update, job_queue):
-    t = time(21, 9, 45)
+    t = time(20, 0, 0)
     logger.info(t.isoformat())
     job_queue.run_daily(kysyLaskarit, t, (0, 1, 2, 3, 4, 5, 6), context=update.message.chat_id, name=None) 
     update.message.reply_text('Laskarit ajoitus aloitettu about 20')
